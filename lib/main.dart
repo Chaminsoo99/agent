@@ -67,7 +67,7 @@ class MyApp extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.add_business_rounded, color: Colors.grey),
-              title: Text('사회복무규정'),
+              title: Text('사회복무규정111111'),
               onTap: (){
                 //사이트이동
               },
