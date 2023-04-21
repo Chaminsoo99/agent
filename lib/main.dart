@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'b.dart' as b;
+import 'dateCalculator.dart';
 
 // https://github.com/chihyeonWON/Loving_Day
 
@@ -19,12 +20,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('에이전트  '),
+        title: Text('에이전트'),
         centerTitle: true,
         elevation: 0.0,
         backgroundColor: Colors.amber[700],),
 
-      body: Text('남은복무일'),
+      body: DateCalculator(),  //남은 복무일 계산해주는 커스텀위젯
+
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -73,10 +75,8 @@ class MyApp extends StatelessWidget {
               },
             ),
           ],
-
         ),
       ),
-
     );
   }
 }
