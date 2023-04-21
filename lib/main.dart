@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('에이전트'),
+        title: Text('에이전트  '),
         centerTitle: true,
         elevation: 0.0,
         backgroundColor: Colors.amber[700],),
