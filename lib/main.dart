@@ -1,3 +1,4 @@
+import 'package:agent/MyWebView.dart';
 import 'package:flutter/material.dart';
 import 'b.dart' as b;
 import 'dateCalculator.dart';
@@ -11,6 +12,12 @@ void main() {
     )
   );
 }
+
+//웹뷰로 띄워줄 링크들의 리스트
+var linkList = [
+  'https://www.naver.com/',
+];
+
 
 
 class MyApp extends StatelessWidget {
@@ -44,6 +51,12 @@ class MyApp extends StatelessWidget {
               title: Text('사회복무포털'),
               onTap: (){
                 //사이트이동
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) =>
+                        MyWebView(link: linkList[0],
+                            appbartext: '테스트제목'))
+                );
               },
             ),
             ListTile(
