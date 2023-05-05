@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'b.dart' as b;
 import 'dateCalculator.dart';
 
-// https://github.com/chihyeonWON/Loving_Day
 
 void main() {
   runApp(
@@ -14,10 +13,7 @@ void main() {
 }
 
 //웹뷰로 띄워줄 링크들의 리스트
-var linkList = [
-  'https://www.naver.com/',
-];
-
+var linkList = ['https://www.naver.com/',];
 
 
 class MyApp extends StatelessWidget {
@@ -32,7 +28,7 @@ class MyApp extends StatelessWidget {
         elevation: 0.0,
         backgroundColor: Colors.amber[700],),
 
-      body: DateCalculator(),  //남은 복무일 계산해주는 커스텀위젯
+      body: DateCalculator(), //남은 복무일 계산해주는 커스텀위젯
 
       drawer: Drawer(
         child: ListView(
@@ -49,7 +45,7 @@ class MyApp extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.add_business_rounded, color: Colors.grey),
               title: Text('사회복무포털'),
-              onTap: (){
+              onTap: () {
                 //사이트이동
                 Navigator.push(
                     context,
@@ -62,28 +58,28 @@ class MyApp extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.add_business_rounded, color: Colors.grey),
               title: Text('공익갤러리'),
-              onTap: (){
+              onTap: () {
                 //사이트이동
               },
             ),
             ListTile(
               leading: Icon(Icons.add_business_rounded, color: Colors.grey),
               title: Text('신문고'),
-              onTap: (){
+              onTap: () {
                 //사이트이동
               },
             ),
             ListTile(
               leading: Icon(Icons.add_business_rounded, color: Colors.grey),
               title: Text('월급계산기'),
-              onTap: (){
+              onTap: () {
                 //사이트이동
               },
             ),
             ListTile(
               leading: Icon(Icons.add_business_rounded, color: Colors.grey),
               title: Text('사회복무규정111111'),
-              onTap: (){
+              onTap: () {
                 //사이트이동
               },
             ),
