@@ -13,7 +13,7 @@ void main() {
 }
 
 //웹뷰로 띄워줄 링크들의 리스트
-var linkList = ['https://www.naver.com/',];
+var linkList = ['https://sbm.mma.go.kr/caisSHBS/', 'https://gall.dcinside.com/board/lists?id=gongik_new', ''];
 
 
 class MyApp extends StatelessWidget {
@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
                     context,
                     MaterialPageRoute(builder: (context) =>
                         MyWebView(link: linkList[0],
-                            appbartext: '테스트제목'))
+                            appbartext: '뒤로가기'))
                 );
               },
             ),
@@ -60,6 +60,12 @@ class MyApp extends StatelessWidget {
               title: Text('공익갤러리'),
               onTap: () {
                 //사이트이동
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) =>
+                        MyWebView(link: linkList[1],
+                            appbartext: '뒤로가기'))
+                );
               },
             ),
             ListTile(
@@ -67,20 +73,38 @@ class MyApp extends StatelessWidget {
               title: Text('신문고'),
               onTap: () {
                 //사이트이동
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) =>
+                        MyWebView(link: linkList[2],
+                            appbartext: '뒤로가기'))
+                );
               },
             ),
             ListTile(
               leading: Icon(Icons.add_business_rounded, color: Colors.grey),
-              title: Text('월급계산기'),
+              title: Text('000'),
               onTap: () {
                 //사이트이동
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) =>
+                        MyWebView(link: linkList[3],
+                            appbartext: '뒤로가기'))
+                );
               },
             ),
             ListTile(
               leading: Icon(Icons.add_business_rounded, color: Colors.grey),
-              title: Text('사회복무규정111111'),
+              title: Text('사회복무규정'),
               onTap: () {
                 //사이트이동
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) =>
+                        MyWebView(link: linkList[4],
+                            appbartext: '뒤로가기'))
+                );
               },
             ),
           ],

@@ -43,7 +43,7 @@ class _DateCalculatorState extends State<DateCalculator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white, // 배경색 적용
+        backgroundColor: Color(0xfff3d5b8), // 배경색 적용
         body: SafeArea( // 시스템 UI 피해서 UI 그리기
             top: true,
             bottom:false,
@@ -85,7 +85,7 @@ class  _DDay extends StatelessWidget {
           height:16.0,
         ),
         Text(
-          '복무 시작 날짜',
+          '소집해제 날',
         ),
         Text( // 임시로 지정한 복무 시작 날짜
           '${firstDay.year}.${firstDay.month}.${firstDay.day}',
@@ -93,20 +93,16 @@ class  _DDay extends StatelessWidget {
         const SizedBox(
           height: 16.0,
         ),
-        IconButton(
-          iconSize:60.0,
-          onPressed:onHeartPressed,
-          icon:Icon(
-            Icons.add_box,
-            color:Colors.red,
-          ),
-        ),
+        ElevatedButton(
+            onPressed: onHeartPressed,
+            child: Text('날짜변경')),
         const SizedBox(
           height:16.0,
         ),
         Text( // 복무 시작 후 DDay
           // DDay 계산하기
-          'D+${DateTime(now.year, now.month, now.day).difference(firstDay).inDays + 1}',
+         // D+계산식--->  'D+${DateTime(now.year, now.month, now.day).difference(firstDay).inDays + 1}',
+          'D-${-DateTime(now.year, now.month, now.day).difference(firstDay).inDays}',
         ),
       ],
     );
@@ -131,3 +127,4 @@ class _AgentImage extends StatelessWidget {
     );
   }
 }
+
