@@ -1,14 +1,14 @@
 import 'package:agent/MyWebView.dart';
 import 'package:flutter/material.dart';
-import 'b.dart' as b;
-import 'dateCalculator.dart';
+import 'home.dart';
 
 
 void main() {
   runApp(
     MaterialApp(
-      home: MyApp(),
-    )
+          home: MyApp(),
+        ),
+
   );
 }
 
@@ -26,20 +26,20 @@ class MyApp extends StatelessWidget {
         title: Text('에이전트'),
         centerTitle: true,
         elevation: 0.0,
-        backgroundColor: Colors.amber[700],),
+        backgroundColor: Colors.teal,),
 
-      body: DateCalculator(), //남은 복무일 계산해주는 커스텀위젯
+      body: report(), //남은 복무일 계산해주는 커스텀위젯
 
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
             UserAccountsDrawerHeader(
-              decoration: BoxDecoration(color: Colors.amber[700]),
+              decoration: BoxDecoration(color: Colors.teal),
               currentAccountPicture: CircleAvatar(
                 backgroundImage: AssetImage('assets/agent.png'),
               ),
-              accountName: Text('<사회복무요원>'),
+              accountName: Text('[사회복무요원]'),
               accountEmail: Text('메뉴'),
             ),
             ListTile(

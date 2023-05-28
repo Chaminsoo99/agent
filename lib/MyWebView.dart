@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
-
+import 'package:agent/mainboard.dart';
 
 ///인자로 '링크값'과 '앱바 title'을 받아서 웹뷰페이지를 띄워주는 커스텀위젯
 class MyWebView extends StatelessWidget {
