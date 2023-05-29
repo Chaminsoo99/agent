@@ -35,9 +35,9 @@ class _reportState extends State<report> {
         },
         items: [
           const BottomNavigationBarItem(icon: Icon(Icons.home),label: '홈'),
-          const BottomNavigationBarItem(icon: Icon(Icons.home),label: 'Tab1'),
-          const BottomNavigationBarItem(icon: Icon(Icons.home),label: 'Tab2'),
-          const BottomNavigationBarItem(icon: Icon(Icons.home),label: 'Tab3'),
+          const BottomNavigationBarItem(icon: Icon(Icons.home),label: '복무지'),
+          const BottomNavigationBarItem(icon: Icon(Icons.home),label: '군적금'),
+          const BottomNavigationBarItem(icon: Icon(Icons.home),label: '훈련소'),
         ],
       ),
     );
