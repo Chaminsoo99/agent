@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "783084539560",
+    "project_id": "agent-app-ff660",
+    "storage_bucket": "agent-app-ff660.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783084539560:android:2afb46c4e4c1d3a0abbc9d",
+        "android_client_info": {
+          "package_name": "com.example.agent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783084539560-4atlkmn7dglsgl86fjf199thdakag168.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2dm3LHERjz_QVTSPjpsislU4IVG4Y4pk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783084539560-4atlkmn7dglsgl86fjf199thdakag168.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
